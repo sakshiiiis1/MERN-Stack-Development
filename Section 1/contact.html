@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+        .mycard{
+            border: 1px solid red;
+            width: 400px;
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.301);
+            background-color: white;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image:linear-gradient(10deg, rgba(0, 0, 0, 0.527), rgba(255, 238, 0, 0)), url('https://burst.shopifycdn.com/photos/contact-us-phone.jpg?width=1200&format=pjpg&exif=1&iptc=1');
+            /* background-image: linear-gradient(60deg, rgba(0, 128, 117, 0), rgba(51, 255, 0, 0)); */
+            background-size: cover;
+        }
+
+        .myinput{
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            padding: 5px;
+        }
+
+        .mybtn{
+            width: 100%;
+            background-color: crimson;
+            color: white;
+            padding:10px;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 30px;
+            border: none;
+            box-shadow: 5px 3px 10px 2px rgba(0, 0, 0, 0.301);
+
+        }
+
+            .form-title{
+                font-family: Montserrat;
+                text-align: center;
+            }
+
+            *{
+                font-family: Montserrat;
+            }
+
+        
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="mycard">
+        <h2 class="form-title">Contact Form</h2>
+
+        <form>
+
+            <label for="">Frist Name</label>
+            <input class="myinput" type="text">
+            
+            <label for="">Last name</label>
+            <input class="myinput" type="text">
+
+            <label for="">Mobile Number</label>
+            <input class="myinput" type="number">
+
+            <label for="">Email Address</label>
+            <input class="myinput" type="email">
+
+            <button class="mybtn">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url('https://i.gadgets360cdn.com/large/stranger-things-3_1546407568504.jpg');
+        background-position: right, top, top;
+        background-size: contain;
+    }
+    .nav-bar{
+        height: 10vh;
+        display: flex;
+        justify-content:left
+    }
+    .img-logo{
+        width: 14%;
+    }
+    .tvshows{
+        background-color: black;
+        color: white;
+        padding-top: 25px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        padding-right: 8px;
+
+    }
+    .movies{
+        
+        background-color: black;
+        color: white;
+        padding-top: 25px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        padding-right: 8px;
+
+    }
+    .recently-added{
+        background-color: black;
+        color: white;
+        padding-top: 25px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        padding-right: 8px;
+
+    }
+    .my-list{
+        background-color: black;
+        color: white;
+        padding-top: 25px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        padding-right: 8px;
+
+    }
+    .main-container{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        padding: 10px;
+        margin-bottom: 14px;
+
+    }
+    .stranger-things-logo{
+        background-color: black;
+    }
+    .paragraph{
+    
+        color: white;
+        font-size: 0.9em;
+        margin-bottom: 0.3px;
+        padding: 20px 10px;
+        /* font-weight: bold; */
+        font-size: 1.1em;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .cards{
+        width: 20%;
+    }
+    .image img{
+
+        width: 100%;
+    }
+    .Play-button{
+       outline: none;
+       border: none;
+       padding: 10px 30px 10px 30px;
+       font-size: 1em;
+       background-color: red;
+       font-weight: bold;
+       
+
+
+        
+    }
+    .button-list{
+        width: 100%;
+        height: fit-content;
+        /* background-color: white; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+
+    }
+    .email-container{
+        
+        width: 55%;
+        height: fit-content;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-email-container-input{
+        outline: none;
+        border: none;
+        padding: 20px 10px;
+        font-size: 1.4em;
+
+    }
+    .btn-get-started{
+        padding: 20px 32px;
+        height: fit-content;
+        background-color: red;
+        color: white;
+        font-size: 1.4em;
+        text-transform:uppercase;
+        text-align: center;
+        font-weight: bold;
+    }
+    .my-list-button{
+        outline: none;
+       border: none;
+       padding: 10px 30px 10px 30px;
+       font-size: 1em;
+       background-color: white;
+       font-weight: bold;
+       
+    }
+    .populor-on-netflix{
+        color: white;
+        font-size: 2em;
+        padding: 20px 10px 4px 8px;
+    }
+
+</style>
+<body>
+    <div class="root">
+        <nav class="nav-bar">
+            <img class="img-logo" src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png" alt="Netflix-logo-red-black-png">
+            <div class="tvshows">TV Shows</div>
+            <div class="movies">Movies</div>
+            <div class="recently-added">Recently Added</div>
+            <div class="my-list">My List</div>
+
+
+
+
+
+        </nav>
+    </div>
+    <div class="main-container">
+        <nav class="nav-bar-2">
+            <img class="stranger-things-logo" src="data:image/png;base64,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">
+            <div class="paragraph">
+                <p>
+                    When a young boy vanishes, the small town uncovers</p>
+                   <p>  a mystery involving secrets experiments,terryfying </p>
+                  <p>   supernatural forces, and a strange little girl.
+
+                </p>
+            </div>
+
+            <div class="button-list">
+                <button class="Play-button">
+                    Play
+
+                </button>
+           
+                <button class="my-list-button">
+                    + My List
+                </button>
+            </div>
+
+            <div class="populor-on-netflix">
+                <h4>
+                    Enter your email address and get started
+                </h4>
+            </div>
+
+
+
+        </nav>
+   
+  
+        <div class="email-container">
+           <input class="main-email-container-input" type="email" placeholder="Email address"/>
+            <div class="btn-get-started">Get Started</div>
+        </div>
+
+    </div>
+    
+
+</div>
+   
+</body>
+</html>
+
+
